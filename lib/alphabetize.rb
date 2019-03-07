@@ -1,7 +1,7 @@
 require 'pry'
 
 ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
-e = ESPERANTO_ALPHABET.scan /\w/
+e = ESPERANTO_ALPHABET.split("")
 
 def get_num(letter, e)
   e.index{ |a| letter == a}
