@@ -34,6 +34,8 @@ def alphabetize(arr, e)
         output_array << temp_array.delete_at(0)
       end
       if temp_array.length == 1
+        puts "loop over"
+        puts "temp, out:\n#{temp_array}\n#{output_array}\n"
         break
       end
     binding.pry
