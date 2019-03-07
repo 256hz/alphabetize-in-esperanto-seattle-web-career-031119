@@ -15,8 +15,9 @@ def alphabetize(arr, e)
     temp_array = output_array
     output_array = []
     counter += 1
+    puts "counter: #{counter}\ntemp_array:\n#{temp_array}\n"
+
     while temp_array.length > 1
-      puts "counter: #{counter}\ntemp_array:\n#{temp_array}\n"
       a = get_num(temp_array[0][0], e)
       b = get_num(temp_array[1][0], e)
       #binding.pry
@@ -32,13 +33,17 @@ def alphabetize(arr, e)
         puts "#{temp_array[0]} comes before #{temp_array[1]}"
         output_array << temp_array.delete_at(0)
       end
+      if temp_array.length == -1
+        break
+      end
+    binding.pry
     end
     if temp_array.length == 1
       output_array << temp_array.delete_at(0)
     end
     puts "#{counter}\n#{output_array}\n\n"
     counter += 1
-    binding.pry
+
     if sorted == true
       return output_array
     end
