@@ -35,13 +35,12 @@ def alphabetize(arr, e)
         output_array << temp_array.shift
       end
       if temp_array.length == 1
-        puts "loop over"
-        puts "temp, out:\n#{temp_array}\n#{output_array}\n"
         break
       end
     end
     output_array << temp_array.delete_at(0)
     puts "\noutput at end of loop #{counter}:\n#{output_array}\n\n"
+    puts "sorted = #{sorted}"
     counter += 1
     binding.pry
     if sorted == true
