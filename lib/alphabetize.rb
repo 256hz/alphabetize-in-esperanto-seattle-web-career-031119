@@ -43,7 +43,7 @@ def alphabetize(arr, e)
     puts "\noutput at end of loop #{counter}:\n#{output_array}\n\n"
     puts "sorted = #{sorted}"
     counter += 1
-    binding.pry
+    #binding.pry
     if sorted == true
       return output_array
       break
