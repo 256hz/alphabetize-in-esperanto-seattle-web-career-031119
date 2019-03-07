@@ -25,7 +25,7 @@ def alphabetize(arr, e)
       when -1
         output_array << temp_array.delete_at(1)
         sorted = false
-        puts "found unsorted pair #{a} #{b}"
+        puts "'#{temp_array[1]}' comes before '#{temp_array[0]}'"
       when 0
         puts "#{temp_array[0]} same as #{temp_array[1]}"
         output_array << temp_array.delete_at(0)
