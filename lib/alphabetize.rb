@@ -16,7 +16,7 @@ def alphabetize(arr, e)
     output_array = []
     counter += 1
     puts "counter: #{counter}\ntemp_array:\n#{temp_array}\n"
-
+    sorted = true
     while temp_array.length > 1
       a = get_num(temp_array[0][0], e)
       b = get_num(temp_array[1][0], e)
