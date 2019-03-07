@@ -30,7 +30,7 @@ def alphabetize(arr, e)
         puts "#{temp_array[0]} same as #{temp_array[1]}"
         output_array << temp_array.delete_at(0)
       when 1
-        puts "#{temp_array[0]} comes before #{temp_array[1]}"
+        puts "'#{temp_array[0]}' comes before '#{temp_array[1]}'"
         output_array << temp_array.delete_at(0)
       end
       if temp_array.length == 1
