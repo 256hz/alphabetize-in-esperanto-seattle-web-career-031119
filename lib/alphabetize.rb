@@ -25,6 +25,7 @@ def alphabetize(arr, e)
       case b <=> a
       when -1
         puts "'#{temp_array[1]}' comes before '#{temp_array[0]}'"
+        puts "false sorted triggered"
         output_array << temp_array.delete_at(1)
         sorted = false
       when 0
