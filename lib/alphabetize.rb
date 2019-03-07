@@ -38,14 +38,11 @@ def alphabetize(arr, e)
         puts "temp, out:\n#{temp_array}\n#{output_array}\n"
         break
       end
-    binding.pry
     end
-    if temp_array.length == 1
-      output_array << temp_array.delete_at(0)
-    end
+    output_array << temp_array.delete_at(0)
     puts "#{counter}\n#{output_array}\n\n"
     counter += 1
-
+    binding.pry
     if sorted == true
       return output_array
       break
