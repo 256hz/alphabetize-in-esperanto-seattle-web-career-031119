@@ -24,9 +24,9 @@ def alphabetize(arr, e)
       puts 
       case b <=> a
       when -1
+        puts "'#{temp_array[1]}' comes before '#{temp_array[0]}'"
         output_array << temp_array.delete_at(1)
         sorted = false
-        puts "'#{temp_array[1]}' comes before '#{temp_array[0]}'"
       when 0
         puts "#{temp_array[0]} same as #{temp_array[1]}"
         output_array << temp_array.shift
