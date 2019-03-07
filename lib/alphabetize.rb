@@ -40,7 +40,7 @@ def alphabetize(arr, e)
       end
     end
     output_array << temp_array.delete_at(0)
-    puts "#{counter}\n#{output_array}\n\n"
+    puts "\noutput at end of loop #{counter}:\n#{output_array}\n\n"
     counter += 1
     binding.pry
     if sorted == true
