@@ -1,13 +1,14 @@
 require 'pry'
 
 ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
-e = ESPERANTO_ALPHABET.split("")
+
 
 def get_num(letter, e)
   e.index{ |a| letter == a}
 end
 
-def alphabetize(arr, e)
+def alphabetize(arr)
+  e = ESPERANTO_ALPHABET.split("")
   output_array = [*arr]
   temp_array = []
   counter = 0
@@ -50,6 +51,16 @@ def alphabetize(arr, e)
     end
   end
 end
+
+def compare(a, b)
+  while compare_index < min(a.length, b.length)
+  case b <=> a
+  when -1
+    return -1
+  when 1
+    return 1
+  when 0
+    
 
 example = ["mi amas vin", "bonan matenon", "pacon", "ĉu vi parolas esperanton"]
 
