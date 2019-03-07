@@ -46,6 +46,7 @@ def alphabetize(arr, e)
 
     if sorted == true
       return output_array
+      break
     end
   end
 end
