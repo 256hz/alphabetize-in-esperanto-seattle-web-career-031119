@@ -36,6 +36,7 @@ def alphabetize(arr)
     output_array << temp_array.delete_at(0)
     counter += 1
     if sorted == true
+      puts output_array
       return output_array
       break
     end
