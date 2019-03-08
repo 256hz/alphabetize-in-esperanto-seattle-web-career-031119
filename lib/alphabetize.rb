@@ -19,7 +19,6 @@ def alphabetize(arr)
     sorted = true
     while temp_array.length > 1
       #binding.pry
-      puts 
       case compare(temp_array[0], temp_array[1], e)
       when -1
         output_array << temp_array.delete_at(1)
