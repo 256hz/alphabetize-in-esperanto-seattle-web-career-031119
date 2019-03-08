@@ -45,7 +45,7 @@ end
 
 def compare(word1, word2, e)
   compare_index = 0
-  while compare_index =< min(a.length, b.length)
+  while compare_index <= min(a.length, b.length)
     a = get_num(word1[compare_index], e)
     b = get_num(word2[compare_index], e)
     case b <=> a
