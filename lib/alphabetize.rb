@@ -55,6 +55,7 @@ def compare(word1, word2, e)
       return 1
     when 0
       compare_index += 1
+    end
   end
 end
 
