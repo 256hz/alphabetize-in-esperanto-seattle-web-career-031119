@@ -60,4 +60,4 @@ end
 
 example = ["mi amas vin", "bonan matenon", "pacon", "ĉu vi parolas esperanton"]
 
-alphabetize(example, e)
+alphabetize(example)
