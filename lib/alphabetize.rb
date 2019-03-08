@@ -11,14 +11,12 @@ def alphabetize(arr)
   e = ESPERANTO_ALPHABET.split("")
   output_array = [*arr]
   temp_array = []
-  counter = 0
+
   while 
     temp_array = output_array
     output_array = []
-    counter += 1
     sorted = true
     while temp_array.length > 1
-      #binding.pry
       case compare(temp_array[0], temp_array[1], e)
       when -1
         output_array << temp_array.delete_at(1)
@@ -33,13 +31,12 @@ def alphabetize(arr)
       end
     end
     output_array << temp_array.delete_at(0)
-    counter += 1
     if sorted == true
-      puts output_array
       return output_array
       break
     end
   end
+
 end
 
 def compare(word1, word2, e)
