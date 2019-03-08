@@ -53,13 +53,14 @@ def alphabetize(arr)
 end
 
 def compare(a, b)
-  while compare_index < min(a.length, b.length)
-  case b <=> a
-  when -1
-    return -1
-  when 1
-    return 1
-  when 0
+  compare_index = 0
+  while compare_index =< min(a.length, b.length)
+    case b <=> a
+    when -1
+      return -1
+    when 1
+      return 1
+    when 0
     
 
 example = ["mi amas vin", "bonan matenon", "pacon", "ĉu vi parolas esperanton"]
